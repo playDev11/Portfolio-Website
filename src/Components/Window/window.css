@@ -1,0 +1,66 @@
+.window {
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  border: 1px solid #d0d0d0;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  z-index: 10; /* Ensure windows stack */
+}
+
+.window-header {
+  background-color: #ececec;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  border-bottom: 1px solid #d0d0d0;
+  border-radius: 12px 12px 0 0;
+  position: relative;
+}
+
+.window-controls {
+  display: flex;
+  gap: 8px;
+}
+
+.window-controls button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.window-close {
+  background-color: #ff5f56;
+}
+
+.window-minimize {
+  background-color: #ffbd2e;
+}
+
+.window-maximize {
+  background-color: #27c93f;
+}
+
+.window-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.window-content {
+  padding: 20px;
+  flex-grow: 1;
+  background-color: #ffffff;
+  overflow-y: auto;
+  border-radius: 0 0 12px 12px;
+  height: 100%;
+}

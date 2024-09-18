@@ -1,0 +1,8 @@
+.text-black {
+    opacity: 1;
+}
+
+.text-sm {
+    font-size: .875rem;
+    line-height: 1.25rem;
+}

@@ -1,0 +1,42 @@
+.taskbar {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.2); /* Transparent background */
+  backdrop-filter: blur(10px); /* Glass effect */
+  padding: 10px 15px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  z-index: 100;
+}
+
+.taskbar-icon {
+  width: 48px; /* Reduced size */
+  height: 48px;
+  border-radius: 12px; /* Slight rounded corners for modern look */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+}
+
+.taskbar-icon:hover {
+  transform: scale(1.15); /* Slight scaling on hover, less aggressive */
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
+}
+
+.taskbar-icon img {
+  width: 60%; /* Make icon image smaller */
+  height: 60%;
+}
+
+.taskbar-icon-background {
+  background: radial-gradient(circle, #f0f0f0 0%, #e1e1e1 100%); /* Soft gradient */
+  border-radius: 50%;
+  padding: 6px; /* Padding inside for icon placement */
+}
